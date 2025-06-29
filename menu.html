@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Royal Bites</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+  <a href="menu.html" class="active">Menu</a>
+  <ul class="dropdown-content">
+    <li><a href="breakfast.html">Breakfast</a></li>
+    <li><a href="regular.html">Regular</a></li>
+  </ul>
+</li>
+        <li><a href="promo.html">Promotions</a></li>
+        <li><a href="app.html">Mobile App</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button id="hamburger" class="hamburger" aria-label="Open More Links">&#9776;</button>
+    </nav>
+  </header>
+
+  <aside id="sidebar" class="sidebar" aria-label="More navigation">
+    <button id="close-sidebar" class="close-btn" aria-label="Close Sidebar">&#x2715;</button>
+    <ul>
+      
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Explore Our Menu</h1>
+      <p>From early-morning cravings to late-night bites, Royal Bites brings you a satisfying range of freshly made meals to fit any time of the day.</p>
+    </section>
+
+
+    <section class="menu-preview top-gap" style="background-image: url('images/breakfast.jpg');">
+      <div class="menu-overlay">
+        <h2>Breakfast</h2>
+        <a href="breakfast.html" class="menu-btn">View Menu</a>
+      </div>
+    </section>
+
+    <section class="menu-preview" style="background-image: url('images/regular.jpg');">
+      <div class="menu-overlay">
+        <h2>Regular Meals</h2>
+        <a href="regular.html" class="menu-btn">View Menu</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" title="Go to top" onclick="scrollToTop()">&#11014;</button>
+
+ <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" class="footer-logo" />
+        <p class="footer-intro">
+          Royal Bites promises a value lifestyle proposition of great variety and quality food at affordable prices.
+          The uncompromising quality of food is what keeps our customers coming back.
+          <a href="about.html" class="read-more">Read more</a>
+        </p>
+      </div>
+
+  <!-- Quick Links -->
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="promo.html">Promotions</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="restaurant.html">Find a Restaurant</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+  </ul>
+</div>
+        <!-- Social & Follow Us -->
+<div class="footer-right">
+  <h4>Follow Us</h4>
+  <a href="https://www.instagram.com/myroyalbites/" target="_blank" class="social-icon">
+    <img src="images/instagram.png" alt="Instagram" class="social-logo" />
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+    <img src="images/linkedin.png" alt="LinkedIn" class="social-logo" />
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Royal Bites. All rights reserved.</p>
+    <p>Best viewed on Chrome or Edge · 1920 × 1080 recommended.</p>
+    <p class="disclaimer">
+      Disclaimer: This website is a student project created for educational purposes under the IML254 course.
+    </p>
+    <p>Last updated: June 2025</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

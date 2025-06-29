@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Royal Bites Team" />
+  <meta name="description" content="Contact Royal Bites for customer service, feedback, or business inquiries." />
+  <meta name="keywords" content="Royal Bites, Contact, Support, Fast Food, Feedback, Complaint" />
+  <title>Contact Us | Royal Bites</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/royalbites-logo.png" alt="Royal Bites Logo" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+  <a href="menu.html">Menu</a>
+  <ul class="dropdown-content">
+    <li><a href="breakfast.html">Breakfast</a></li>
+    <li><a href="regular.html">Regular</a></li>
+  </ul>
+</li>
+
+      <li><a href="promo.html" >Promotions</a></li>
+      <li><a href="app.html">Mobile App</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+
+    <button id="hamburger" class="hamburger" aria-label="Open More Links">&#9776;</button>
+  </nav>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside id="sidebar" class="sidebar" aria-label="More navigation">
+    <button id="close-sidebar" class="close-btn" aria-label="Close Sidebar">&times;</button>
+    <ul>
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms & Condition</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+  
+   <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Contact Royal Bites</h1>
+      <p>We're here to help — whether it's a question, feedback, or just saying hello.</p>
+    </section>
+
+    <!-- Contact Info Summary -->
+<section class="contact-details">
+  <div class="contact-cards">
+    <div class="contact-card">
+      <img src="images/phone.png" alt="Phone Icon" />
+      <h3>Customer Support</h3>
+      <p>Call us at 1-800-ROYAL-88<br><small>Daily: 9:00 AM – 10:00 PM</small></p>
+    </div>
+    <div class="contact-card">
+  <img src="images/map.png" alt="Location Icon" />
+  <h3>HQ Address</h3>
+  <p>Royal Bites Sdn Bhd<br>Gurney Drive, Georgetown, 10250 George Town, Pulau Pinang</p>
+</div
+    </div>
+    <div class="contact-card">
+      <img src="images/email.png" alt="Email Icon" />
+      <h3>Email</h3>
+      <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=2023808218@student.uitm.edu.my" target="_blank">
+ support@royalbites.com
+</a>
+</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="form-section">
+  <h2>Send Us a Message</h2>
+  <form id="generalForm" class="contact-form">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" rows="5" placeholder="Your message or inquiry..." required></textarea>
+    <button type="submit" class="btn-primary">Submit</button>
+  </form>
+</section>
+
+<!-- Complaints Form Section -->
+<section class="form-section complaints-section">
+  <h2>Submit a Complaint</h2>
+  <p>If you experienced an issue at any Royal Bites location, please use this form. We take every concern seriously.</p>
+  <form id="complaintForm" class="contact-form" enctype="multipart/form-data">
+    <input type="text" name="location" placeholder="Branch or Location Visited" required>
+    <input type="date" name="visit-date" required>
+
+    <select name="complaint-type" required>
+      <option value="">-- Select Complaint Type --</option>
+      <option value="food">Food Quality</option>
+      <option value="service">Service Experience</option>
+      <option value="cleanliness">Cleanliness</option>
+      <option value="delivery">Delivery Issue</option>
+      <option value="other">Other</option>
+    </select>
+
+    <textarea name="complaint" rows="5" placeholder="Explain the issue clearly..." required></textarea>
+
+    <label for="evidence" class="file-label">Attach Photo Evidence (optional)</label>
+    <input type="file" id="evidence" name="evidence" accept="image/*">
+
+    <button type="submit" class="btn-secondary">Submit Complaint</button>
+  </form>
+</section>
+
+<!-- Location Map -->
+<section class="location-map">
+  <h2>Visit Our HQ</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d896.3307656605364!2d100.31768040013576!3d5.431760016541435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smy!4v1750948280342!5m2!1sen!2smy"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+<!-- CTA Follow-up -->
+<section class="cta-followup">
+  <h2>Need More Help?</h2>
+  <p>
+    Check out our <a href="faq.html">FAQ Page</a> for answers to common questions, or use the form above to get in touch with our support team.
+  </p>
+  <p>
+    Whether it’s a question, feedback, or complaint — we're here to listen. Every message is read and responded to by our team with care.
+  </p>
+  <p>
+    We aim to respond within 24 hours. Your satisfaction and trust mean everything to us at Royal Bites.
+  </p>
+</section>
+
+   
+
+<!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" title="Go to top" onclick="scrollToTop()">&#11014;</button>
+
+ <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" class="footer-logo" />
+        <p class="footer-intro">
+          Royal Bites promises a value lifestyle proposition of great variety and quality food at affordable prices.
+          The uncompromising quality of food is what keeps our customers coming back.
+          <a href="about.html" class="read-more">Read more</a>
+        </p>
+      </div>
+
+  <!-- Quick Links -->
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="promo.html">Promotions</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="restaurant.html">Find a Restaurant</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+  </ul>
+</div>
+        <!-- Social & Follow Us -->
+<div class="footer-right">
+  <h4>Follow Us</h4>
+  <a href="https://www.instagram.com/myroyalbites/" target="_blank" class="social-icon">
+    <img src="images/instagram.png" alt="Instagram" class="social-logo" />
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+    <img src="images/linkedin.png" alt="LinkedIn" class="social-logo" />
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Royal Bites. All rights reserved.</p>
+    <p>Best viewed on Chrome or Edge · 1920 × 1080 recommended.</p>
+    <p class="disclaimer">
+      Disclaimer: This website is a student project created for educational purposes under the IML254 course.
+    </p>
+    <p>Last updated: June 2025</p>
+  </div>
+</footer>
+w
+
+
+<script>
+  document.getElementById("generalForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Thank you for reaching out! Our support team will respond shortly.");
+    this.reset();
+  });
+
+  document.getElementById("complaintForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Your complaint has been submitted successfully. We appreciate your feedback.");
+    this.reset();
+  });
+</script>
+
+
+</body>
+</html>

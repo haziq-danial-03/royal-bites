@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Group Members | Royal Bites</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffdf9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .group-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .group-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .group-header h1 {
+      font-size: 2.8rem;
+      color: #0b2545;
+      margin-bottom: 10px;
+    }
+
+    .group-header p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .project-info {
+      background: #f0f4f8;
+      border-left: 5px solid #f95b4c;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .project-info p {
+      font-size: 1rem;
+      margin: 8px 0;
+      color: #333;
+    }
+
+    .project-info strong {
+      display: inline-block;
+      width: 160px;
+      font-weight: 600;
+    }
+
+    .group-members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .group-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 260px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      text-align: center;
+    }
+
+    .group-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .group-card img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #e0e0e0;
+      margin-bottom: 15px;
+    }
+
+    .group-details p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 6px 0;
+    }
+
+    .group-details strong {
+      display: block;
+      color: #0b2545;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .group-card {
+        width: 90%;
+      }
+
+      .project-info p,
+      .group-details p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="group-container">
+    <div class="group-header">
+      <h1>Group Member Details</h1>
+    </div>
+
+    <!-- Project Info -->
+    <div class="project-info">
+      <p><strong>Title:</strong> Corporate Website</p>
+      <p><strong>Group:</strong> KCDIM144 4C</p>
+      <p><strong>Course Code:</strong> IML254</p>
+      <p><strong>Course Name:</strong> Introduction to Web Content Development</p>
+      <p><strong>Faculty:</strong> Faculty of Information Management</p>
+      <p><strong>Submission Date:</strong> 30 June 2025</p>
+    </div>
+
+    <!-- Member Cards -->
+    <div class="group-members">
+      <div class="group-card">
+        <img src="images/group/haziq.jpg" alt="Haziq Danial" />
+        <div class="group-details">
+          <strong>Muhammad Haziq Danial Bin Zamrul</strong>
+          <p>ID: 2023808218</p>
+        </div>
+      </div>
+
+      <div class="group-card">
+        <img src="images/group/rifqie.jpg" alt="Rifqie" />
+        <div class="group-details">
+          <strong>Muhammad Danieal Rifqie Bin Saharudin</strong>
+          <p>ID: 2023621388</p>
+        </div>
+      </div>
+
+      <div class="group-card">
+        <img src="images/group/loy.jpg" alt="Shahmi" />
+        <div class="group-details">
+          <strong>Muhammad Shahmi Wafiq Bin Wlisin</strong>
+          <p>ID: 2023619454</p>
+        </div>
+      </div>
+
+      <div class="group-card">
+        <img src="images/group/ikmal.jpg" alt="Ikmal" />
+        <div class="group-details">
+          <strong>Muhammad Ikmal Harith Bin Norazhar</strong>
+          <p>ID: 2023818776</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

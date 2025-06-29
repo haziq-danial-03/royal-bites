@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Group Members" />
+  <meta name="description" content="Order your favorite meals from Royal Bites." />
+  <meta name="keywords" content="Royal Bites, Order, Fast Food, Delivery" />
+  <title>Order | Royal Bites</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="announcement-banner order-banner" id="order-announcement">
+  <div class="order-banner-inner">
+    <p>
+      In Celebration of Our <strong>60th Anniversary</strong>: Use promo code 
+      <span class="highlight">ROYAL60</span> at checkout to get <strong>60% OFF</strong> your order!
+    </p>
+    <button class="close-order-banner" aria-label="Close announcement">&times;</button>
+  </div>
+</div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/royalbites-logo.png" alt="Royal Bites Logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="menu.html">Menu</a>
+        <ul class="dropdown-content">
+          <li><a href="breakfast.html">Breakfast</a></li>
+          <li><a href="regular.html">Regular</a></li>
+        </ul>
+      </li>
+      <li><a href="promo.html">Promotions</a></li>
+      <li><a href="app.html">Mobile App</a></li>
+      <li><a href="order.html" class="active">Order</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <button id="hamburger" class="hamburger" aria-label="Open More Links">&#9776;</button>
+  </nav>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside id="sidebar" class="sidebar" aria-label="More navigation">
+    <button id="close-sidebar" class="close-btn" aria-label="Close Sidebar">&times;</button>
+    <ul>
+      
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+
+<main>
+  <section class="hero">
+    <h1>Place Your Order Now!</h1>
+    <p>Satisfy that hunger of yours with our fresh and delicious menu</p>
+  </section>
+
+  <section class="menu-container">
+    <h2>Place Your Order</h2>
+    <p><b><i>Order on website is for delivery only delivered by our Royal Riders</b></i></p>
+    <p><b><i>For self pick up order, please use our Royal Bites App</b></i></p>
+    <p>Please select from the available menu below. Availability is based on current time.</p>
+
+    <p class="note" id="breakfast-note"></p>
+    <div id="breakfast-menu" class="menu-section">
+      <h2>Breakfast Menu</h2>
+      <div class="order-card">
+        <img src="images/menu/egg_muffin.jpg" alt="Sausage Egg with Muffin" />
+        <div class="order-details">
+          <h3>Sausage Egg with Muffin</h3>
+          <p class="desc">Juicy sausage with melted cheese in a soft muffin bun</p>
+          <p class="price">RM5.90</p>
+          <div class="order-controls">
+            <label>Qty:</label>
+            <input type="number" min="1" value="1" class="quantity" />
+            <button class="add-to-cart" data-name="Sausage Egg with Muffin" data-price="5.90">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p class="note" id="regular-note"></p>
+    <div id="regular-menu" class="menu-section">
+      <h2>Regular Menu</h2>
+
+      <!-- Burger -->
+      <div class="order-card">
+        <img src="images/menu/classic_beef.jpg" alt="Classic Beef Burger" />
+        <div class="order-details">
+          <h3>Classic Beef Burger</h3>
+          <p class="desc">Grilled beef patty with lettuce, tomato, cheese, and signature sauce.</p>
+          <p class="price">RM10.90</p>
+          <div class="order-controls">
+            <label>Qty:</label>
+            <input type="number" min="1" value="1" class="quantity" />
+            <button class="add-to-cart" data-name="Classic Beef Burger" data-price="10.90">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drink -->
+      <div class="order-card">
+        <img src="images/menu/iced_latte.jpeg" alt="Iced Latte" />
+        <div class="order-details">
+          <h3>Iced Latte</h3>
+          <p class="desc">Smooth espresso with milk over ice — refreshing and bold.</p>
+          <p class="price">RM6.50</p>
+          <div class="order-controls">
+            <label>Qty:</label>
+            <input type="number" min="1" value="1" class="quantity" />
+            <button class="add-to-cart" data-name="Iced Latte" data-price="6.50">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dessert -->
+      <div class="order-card">
+        <img src="images/menu/vanilla_cone.jpg" alt="Vanilla Cone" />
+        <div class="order-details">
+          <h3>Vanilla Cone</h3>
+          <p class="desc">Classic soft-serve in a crispy cone.</p>
+          <p class="price">RM2.50</p>
+          <div class="order-controls">
+            <label>Qty:</label>
+            <input type="number" min="1" value="1" class="quantity" />
+            <button class="add-to-cart" data-name="Vanilla Cone" data-price="2.50">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Cart Display -->
+    <div id="cart" class="cart-display">
+      <h3>Cart</h3>
+      <ul id="cart-items"></ul>
+      <p><strong>Total:</strong> RM <span id="cart-total">0.00</span></p>
+    </div>
+  </section>
+
+   <!-- Proceed to Checkout Button inside cart section -->
+<button id="checkout-btn" class="btn" style="display:none;">Proceed to Checkout</button>
+
+<!-- Login Modal -->
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="login-name" placeholder="Full Name" required />
+      <input type="password" id="login-password" placeholder="Password" required />
+      <button type="submit" class="btn">Continue</button>
+    </form>
+    <p class="signup-link">
+      Don’t have an account?
+      <a href="#" id="open-signup">Sign up now</a>
+    </p>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div id="signup-modal" class="modal signup-modal" style="display: none;">
+  <div class="modal-content">
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <input type="text" id="signup-name" placeholder="Full Name" required />
+      <input type="email" id="signup-email" placeholder="Email Address" required />
+      <input type="password" id="signup-password" placeholder="Password" required />
+      <button type="submit" class="btn">Create Account</button>
+    </form>
+    <p class="signup-link">
+      Already have an account?
+      <a href="#" id="open-login">Login here</a>
+    </p>
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Checkout Modal -->
+<div id="checkout-modal" class="modal">
+  <div class="modal-content large-modal">
+    <div class="row">
+      <!-- Form Section -->
+      <div class="col-75">
+        <div class="container">
+          <form id="checkout-form">
+            <div class="row">
+              <!-- Billing Address -->
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Kwon Ji Young" required>
+                
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" placeholder="gd@example.com" required>
+                
+                <label for="adr"><i class="fa fa-address-card"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+                
+                <label for="city"><i class="fa fa-city"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="Seberang Perai" required>
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="Pulau Pinang" required>
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="13700" required>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Payment Section -->
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="cards">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fab fa-cc-visa" style="color:navy;"></i>
+                  <i class="fab fa-cc-amex" style="color:blue;"></i>
+                  <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fab fa-cc-discover" style="color:orange;"></i>
+                </div>
+
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="Kwon Ji Young" required>
+
+                <label for="ccnum">Credit Card Number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2025" required>
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+     
+           <label for="promo">Promo Code</label>
+<input type="text" id="promo" name="promo" placeholder="ROYAL60" />
+<button type="button" id="apply-promo" class="btn">Apply</button>
+<p id="promo-message"></p>
+
+
+         <label class="checkbox-label">
+  <input type="checkbox" name="sameadr" checked>
+  Delivery address same as billing
+</label>
+
+            <input type="submit" value="Continue to Checkout" class="btn">
+          </form>
+        </div>
+      </div>
+
+      <!-- Dynamic Cart Summary for Checkout Modal -->
+      <div class="col-25">
+        <div class="container">
+          <h4>
+            Cart 
+            <span class="price" style="color:black">
+              <i class="fa fa-shopping-cart"></i> 
+              <b id="checkout-cart-count">0</b>
+            </span>
+          </h4>
+
+          <!-- Items dynamically injected here -->
+          <div id="checkout-cart-items"></div>
+
+          <hr>
+          <p>Total 
+            <span class="price" style="color:black">
+              <b id="checkout-cart-total">RM0.00</b>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div> <!-- End .row -->
+  </div> <!-- End .modal-content -->
+</div> <!-- End #checkout-modal -->
+
+</main>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" title="Go to top" onclick="scrollToTop()">&#11014;</button>
+
+ <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" class="footer-logo" />
+        <p class="footer-intro">
+          Royal Bites promises a value lifestyle proposition of great variety and quality food at affordable prices.
+          The uncompromising quality of food is what keeps our customers coming back.
+          <a href="about.html" class="read-more">Read more</a>
+        </p>
+      </div>
+
+  <!-- Quick Links -->
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="promo.html">Promotions</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="restaurant.html">Find a Restaurant</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+  </ul>
+</div>
+        <!-- Social & Follow Us -->
+<div class="footer-right">
+  <h4>Follow Us</h4>
+  <a href="https://www.instagram.com/myroyalbites/" target="_blank" class="social-icon">
+    <img src="images/instagram.png" alt="Instagram" class="social-logo" />
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+    <img src="images/linkedin.png" alt="LinkedIn" class="social-logo" />
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Royal Bites. All rights reserved.</p>
+    <p>Best viewed on Chrome or Edge · 1920 × 1080 recommended.</p>
+    <p class="disclaimer">
+      Disclaimer: This website is a student project created for educational purposes under the IML254 course.
+    </p>
+    <p>Last updated: June 2025</p>
+  </div>
+</footer>
+
+
+<script src="script.js" defer> </script>
+
+</body>
+</html>

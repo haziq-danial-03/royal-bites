@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breakfast Menu | Royal Bites</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+  <a href="menu.html">Menu</a>
+  <ul class="dropdown-content">
+    <li><a href="breakfast.html" class = "active">Breakfast</a></li>
+    <li><a href="regular.html">Regular</a></li>
+  </ul>
+</li>
+
+        <li><a href="promo.html">Promotions</a></li>
+        <li><a href="app.html">Mobile App</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button id="hamburger" class="hamburger">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <button id="close-sidebar" class="close-btn">&#x2715;</button>
+    <ul>
+     
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Pollcy</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Breakfast Menu</h1>
+    <p>Start your day with Royal Bites — hearty, fresh, and delicious morning favorites.</p>
+  </section>
+
+  <!-- Menu Content -->
+  <main class="menu-section">
+
+    <!-- Category: Breakfast Burgers -->
+    <div class="menu-category">
+      <h2>Breakfast Burgers</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="images/menu/egg_muffin.jpg" alt="Sausage Egg with Muffin" />
+          <div class="menu-info">
+            <h3>Sausage Egg with Muffin</h3>
+            <p class="calories">310 kcal</p>
+            <p class="desc">Juicy sausage with melted cheese in a soft muffin bun</p>
+            <p class="price">Set: RM8.90 &nbsp; | &nbsp; À la carte: RM5.90</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/menu/scramble.jpg" alt="Scramble Egg Burger" />
+          <div class="menu-info">
+            <h3>Scramble Egg Burger</h3>
+            <p class="calories">390 kcal</p>
+            <p class="desc">A fluffy scramble egg on a warm bun with creamy mayo.</p>
+            <p class="price">Set: RM9.50 &nbsp; | &nbsp; À la carte: RM6.50</p>
+          </div>
+        </div>
+   
+       <div class="menu-card">
+          <img src="images/menu/mega.jpg" alt="Mega Breakfast" />
+          <div class="menu-info">
+            <h3>Mega Breakfast</h3>
+            <p class="calories">532 kcal</p>
+            <p class="desc">Hearty combo of eggs, sausage, beans, toast, and hash — the ultimate breakfast feast.</p>
+            <p class="price">Set: RM15.50 &nbsp; | &nbsp; À la carte: RM12.50</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/menu/omellete.jpg" alt="Omelette Sandwich" />
+          <div class="menu-info">
+            <h3>Omelette Sandwich</h3>
+            <p class="calories">355 kcal</p>
+            <p class="desc">Fluffy omelette layered in soft toast with melted cheese and herbs.</p>
+            <p class="price">Set: RM9.50 &nbsp; | &nbsp; À la carte: RM6.50</p>
+          </div>
+        </div>
+
+       <div class="menu-card">
+          <img src="images/menu/porridge.jpg" alt="Porridge" />
+          <div class="menu-info">
+            <h3>Royal Porridge</h3>
+            <p class="calories">290 kcal</p>
+            <p class="desc">Warm, comforting rice porridge with a light savory flavour.</p>
+            <p class="price">Set: RM7.50 &nbsp; | &nbsp; À la carte: RM4.50</p>
+          </div>
+        </div>
+
+       <div class="menu-card">
+          <img src="images/menu/nasi_lemak.jpg" alt="Nasi Lemak" />
+          <div class="menu-info">
+            <h3>Nasi Lemak Royale</h3>
+            <p class="calories">890 kcal</p>
+           <p class="desc">A Malaysian favourite — coconut rice with sambal, anchovies, egg, and peanuts.</p>
+            <p class="price">Set: RM10.50 &nbsp; | &nbsp; À la carte: RM7.50</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Category: Drinks -->
+    <div class="menu-category">
+      <h2>Beverages</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="images/menu/americano.jpg" alt="Americano" />
+          <div class="menu-info">
+            <h3>Americano</h3>
+            <p class="calories">80 kcal</p>
+            <p class="desc">Freshly brewed black coffee, rich and aromatic.</p>
+            <p class="price">RM3.50</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/menu/orange.jpg" alt="Orange Juice" />
+          <div class="menu-info">
+            <h3>Orange Juice</h3>
+            <p class="calories">120 kcal</p>
+            <p class="desc">Chilled 100% orange juice, no sugar added.</p>
+            <p class="price">RM4.00</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/menu/tea.jpeg" alt="Hot Tea" />
+          <div class="menu-info">
+            <h3>Hot Tea</h3>
+            <p class="calories">68 kcal</p>
+            <p class="desc">Classic brewed tea — light, fragrant, and refreshing any time of day.</p>
+            <p class="price">RM3.00</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/menu/latte.jpg" alt="Latte" />
+          <div class="menu-info">
+            <h3>Latte</h3>
+            <p class="calories">120 kcal</p>
+            <p class="desc">Smooth espresso blended with steamed milk for a rich, creamy sip.</p>
+            <p class="price">RM6.00</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Category: Sides -->
+    <div class="menu-category">
+      <h2>Sides</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="images/menu/hashbrown.jpg" alt="Hash Browns" />
+          <div class="menu-info">
+            <h3>Hash Browns</h3>
+            <p class="calories">250 kcal</p>
+            <p class="desc">Crispy golden potato hash — perfect side for breakfast.</p>
+            <p class="price">RM3.80</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Category: Dessert -->
+    <div class="menu-category">
+      <h2>Sweet Treats</h2>
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="images/menu/pancake.jpeg" alt="Pancakes" />
+          <div class="menu-info">
+            <h3>Pancakes with Syrup</h3>
+            <p class="calories">420 kcal</p>
+            <p class="desc">Fluffy pancakes drizzled with sweet maple syrup.</p>
+            <p class="price">Set: RM7.90 &nbsp; | &nbsp; À la carte: RM5.90</p>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/menu/blueberry.jpg" alt="Blueberry Pie" />
+          <div class="menu-info">
+            <h3>Blueberry Pie</h3>
+            <p class="calories">500 kcal</p>
+            <p class="desc">Buttery crust packed with sweet and tangy blueberry filling — a classic treat.</p>
+            <p class="price">RM5.90</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="order-cta">
+  <p style="font-size: 1.2rem; margin-bottom: 0.8rem; color: #012A4A; font-weight: bold;">
+  Hungry already? Your Royal feast is just one click away!
+</p>
+  <a href="order.html" class="menu-btn">Order Now</a>
+</div>
+
+
+  </main>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" title="Go to top" onclick="scrollToTop()">&#11014;</button>
+
+   <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" class="footer-logo" />
+        <p class="footer-intro">
+          Royal Bites promises a value lifestyle proposition of great variety and quality food at affordable prices.
+          The uncompromising quality of food is what keeps our customers coming back.
+          <a href="about.html" class="read-more">Read more</a>
+        </p>
+      </div>
+
+  <!-- Quick Links -->
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="promo.html">Promotions</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="restaurant.html">Find a Restaurant</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+  </ul>
+</div>
+        <!-- Social & Follow Us -->
+<div class="footer-right">
+  <h4>Follow Us</h4>
+  <a href="https://www.instagram.com/myroyalbites/" target="_blank" class="social-icon">
+    <img src="images/instagram.png" alt="Instagram" class="social-logo" />
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+    <img src="images/linkedin.png" alt="LinkedIn" class="social-logo" />
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Royal Bites. All rights reserved.</p>
+    <p>Best viewed on Chrome or Edge · 1920 × 1080 recommended.</p>
+    <p class="disclaimer">
+      Disclaimer: This website is a student project created for educational purposes under the IML254 course.
+    </p>
+    <p>Last updated: June 2025</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

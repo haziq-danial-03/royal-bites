@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Group Members" />
+  <meta name="description" content="Royal Bites – Premium fast food experience with local flavor." />
+  <meta name="keywords" content="Royal Bites, Fast Food, Burgers, Malaysia, Delivery, Menu, Promotions, Coupons" />
+  <title>App | Royal Bites</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/royalbites-logo.png" alt="Royal Bites Logo" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+  <a href="menu.html">Menu</a>
+  <ul class="dropdown-content">
+    <li><a href="breakfast.html">Breakfast</a></li>
+    <li><a href="regular.html">Regular</a></li>
+  </ul>
+</li>
+
+      <li><a href="promo.html" >Promotions</a></li>
+      <li><a href="app.html" class="active">Mobile App</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <button id="hamburger" class="hamburger" aria-label="Open More Links">&#9776;</button>
+  </nav>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside id="sidebar" class="sidebar" aria-label="More navigation">
+    <button id="close-sidebar" class="close-btn" aria-label="Close Sidebar">&times;</button>
+    <ul>
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+  
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Royal Bites Mobile App</h1>
+    <p>Enhance your dining experience with the Royal Bites app — offering seamless ordering, rewards, and exclusive deals directly from your mobile device.</p>
+  </section>
+
+  <!-- Features -->
+ <section class="app-features">
+  <h2>Key Features</h2>
+  <div class="feature-cards">
+
+    <!-- Card 1 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/feature-order.png" alt="Order Ahead">
+          <h3>Order Ahead</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Place your order in advance and pick it up at your convenience without waiting in-store.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/feature-deals.png" alt="Exclusive Deals">
+          <h3>Exclusive Deals</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Enjoy special promotions and digital coupons available only on the Royal Bites app.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/loyalty-program.png" alt="Loyalty Rewards">
+          <h3>Loyalty Rewards</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Earn points with every order and redeem them for discounts, free items, or merchandise.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/feature-tracking.png" alt="Order Tracking">
+          <h3>Order Tracking</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Track your order status in real time — from preparation to delivery or pickup.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/feature-location.png" alt="Find Locations">
+          <h3>Find Locations</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Quickly find the nearest Royal Bites outlet with integrated GPS and location services.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/secure-payment.png" alt="Secure Payments">
+      <h3>Secure Payments</h3>
+      <p>Safe & encrypted</p>
+    </div>
+    <div class="flip-card-back">
+      <p>All transactions through the Royal Bites app are protected with bank-level encryption and industry-standard security protocols.</p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+  <!-- Highlight: Coupon Promo -->
+  <section class="coupon-promo">
+    <h2>App-Exclusive Offers</h2>
+    <p>Our latest promotions and digital coupons are available exclusively through the mobile app. Download now to access personalized savings and early access to new products.</p>
+    <a href="promo.html" class="btn-link">View Promotions</a>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="app-faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Is the Royal Bites app free to use?</h3>
+      <p>Yes. The app is completely free to download and use for placing orders, accessing rewards, and viewing promotions.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need an account to use the app?</h3>
+      <p>You may browse the menu freely, but an account is required to place orders, collect rewards, and redeem coupons.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I track my order through the app?</h3>
+      <p>Yes. Real-time order tracking is available for in-app delivery and takeaway orders.</p>
+    </div>
+    <p>For more questions, please visit our <a href="faq.html">FAQ</a> or <a href="contact.html">Contact Us</a> page.</p>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="cta-background">
+  <div class="cta-overlay">
+    <h2>Delightful deals on the Royal Bites App</h2>
+    <div class="cta-logos">
+      <img src="images/royalbites-logo.png" alt="Royal Bites Logo" class="cta-logo" />
+      
+      <a href="https://apps.apple.com/" target="_blank" rel="noopener">
+        <img src="images/appstore.png" alt="Download on App Store" class="store-badge" />
+      </a>
+      
+      <a href="https://play.google.com/store" target="_blank" rel="noopener">
+        <img src="images/playstore.png" alt="Get it on Google Play" class="store-badge" />
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+ <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" title="Go to top" onclick="scrollToTop()">&#11014;</button>
+
+ <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" class="footer-logo" />
+        <p class="footer-intro">
+          Royal Bites promises a value lifestyle proposition of great variety and quality food at affordable prices.
+          The uncompromising quality of food is what keeps our customers coming back.
+          <a href="about.html" class="read-more">Read more</a>
+        </p>
+      </div>
+
+  <!-- Quick Links -->
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="promo.html">Promotions</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="restaurant.html">Find a Restaurant</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+  </ul>
+</div>
+        <!-- Social & Follow Us -->
+<div class="footer-right">
+  <h4>Follow Us</h4>
+  <a href="https://www.instagram.com/myroyalbites/" target="_blank" class="social-icon">
+    <img src="images/instagram.png" alt="Instagram" class="social-logo" />
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+    <img src="images/linkedin.png" alt="LinkedIn" class="social-logo" />
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Royal Bites. All rights reserved.</p>
+    <p>Best viewed on Chrome or Edge · 1920 × 1080 recommended.</p>
+    <p class="disclaimer">
+      Disclaimer: This website is a student project created for educational purposes under the IML254 course.
+    </p>
+    <p>Last updated: June 2025</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
+

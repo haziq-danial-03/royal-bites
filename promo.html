@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Group Members" />
+  <meta name="description" content="Royal Bites – Premium fast food experience with local flavor." />
+  <meta name="keywords" content="Royal Bites, Fast Food, Burgers, Malaysia, Delivery, Menu, Promotions, Coupons" />
+  <title>Promotions | Royal Bites</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<div class="announcement-banner" id="announcement">
+  <div class="announcement-content">
+    <p><strong>Limited-Time:</strong> Get <span class="highlight">30% OFF Ice Matcha</span> when you order using the Royal Bites App. Offer valid until Sunday!</p>
+    <a href="app.html" class="announcement-btn">Get the App</a>
+  </div>
+  <button id="close-announcement" aria-label="Close announcement">&times;</button>
+</div>
+
+
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+  <a href="menu.html">Menu</a>
+  <ul class="dropdown-content">
+    <li><a href="breakfast.html">Breakfast</a></li>
+    <li><a href="regular.html">Regular</a></li>
+  </ul>
+</li>
+
+      <li><a href="promo.html" class="active">Promotions</a></li>
+      <li><a href="app.html">Mobile App</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <button id="hamburger" class="hamburger" aria-label="Open More Links">&#9776;</button>
+  </nav>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside id="sidebar" class="sidebar" aria-label="More navigation">
+    <button id="close-sidebar" class="close-btn" aria-label="Close Sidebar">&times;</button>
+    <ul>
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+  
+<section class="hero">
+  <h1>Promotions</h1>
+  <p>Discover exclusive deals, limited-time offers, and value-packed meals crafted to give you more for less — only at Royal Bites.</p>
+</section>
+
+
+<main>
+
+ <section class="promotions">
+  <h1>Current Promotions</h1>
+  <p class="section-description">Check out our latest promotional campaigns. Available for a limited time only at Royal Bites outlets nationwide.</p>
+
+  <div id="promo-pages">
+
+    <!-- Page 1 -->
+    <div class="promo-page" id="page-1">
+      <div class="promo-card"><img src="images/promo/promo1.jpg" alt="Promotion 1"></div>
+      <div class="promo-card"><img src="images/promo/promo2.jpg" alt="Promotion 2"></div>
+      <div class="promo-card"><img src="images/promo/promo3.jpg" alt="Promotion 3"></div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="promo-page" id="page-2" style="display: none;">
+      <div class="promo-card"><img src="images/promo/promo4.jpg" alt="Promotion 4"></div>
+      <div class="promo-card"><img src="images/promo/promo5.jpg" alt="Promotion 5"></div>
+      <div class="promo-card"><img src="images/promo/promo6.jpg" alt="Promotion 6"></div>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="promo-page" id="page-3" style="display: none;">
+      <div class="promo-card"><img src="images/promo/promo7.jpg" alt="Promotion 7"></div>
+      <div class="promo-card"><img src="images/promo/promo8.jpg" alt="Promotion 8"></div>
+      <div class="promo-card"><img src="images/promo/promo9.jpg" alt="Promotion 9"></div>
+    </div>
+
+  </div>
+
+  <!-- Pagination Buttons -->
+  <div class="pagination">
+    <button onclick="showPage(1)" class="active" id="btn-1">1</button>
+    <button onclick="showPage(2)" id="btn-2">2</button>
+    <button onclick="showPage(3)" id="btn-3">3</button>
+  </div>
+</section>
+
+
+  <!-- === COUPON + APP DOWNLOAD SECTION === -->
+
+  <section class="exclusive-coupons">
+  <h2>Exclusive App-Only Coupons</h2>
+  <p>Unlock these special discounts by using the Royal Bites App. Scan your code or place an order through the app to redeem.</p>
+
+  <div class="coupon-grid">
+    <!-- Coupon 1 -->
+    <div class="coupon">
+      <div class="container">
+        <h3>Royal Bites</h3>
+      </div>
+      <img src="images/coupon/promo1.jpg" alt="20% Off Combo Meals" style="width:100%">
+      <div class="container" style="background-color:white">
+        <h2>20% OFF</h2>
+        <p>Any Combo Meal</p>
+      </div>
+      <div class="container">
+        <p>Only via Royal Bites App · Valid till July 31</p>
+      </div>
+    </div>
+
+    <!-- Coupon 2 -->
+    <div class="coupon">
+      <div class="container">
+        <h3>Royal Bites</h3>
+      </div>
+      <img src="images/coupon/promo2.jpg" alt="Free Fries with Burger" style="width:100%">
+      <div class="container" style="background-color:white">
+        <h2>Free Fries</h2>
+        <p>With Any Burger Purchase</p>
+      </div>
+      <div class="container">
+        <p>App Users Only · One per user</p>
+      </div>
+    </div>
+
+    <!-- Coupon 3 -->
+    <div class="coupon">
+      <div class="container">
+        <h3>Royal Bites</h3>
+      </div>
+      <img src="images/coupon/promo3.jpg" alt="RM5 Breakfast Set" style="width:100%">
+      <div class="container" style="background-color:white">
+        <h2>RM5 Deal</h2>
+        <p>Breakfast Set (Before 10:30 AM)</p>
+      </div>
+      <div class="container">
+        <p>App Redemption Only · Daily</p>
+      </div>
+    </div>
+
+    <!-- Coupon 4 -->
+    <div class="coupon">
+      <div class="container">
+        <h3>Royal Bites</h3>
+      </div>
+      <img src="images/coupon/promo4.jpg" alt="Student Deal" style="width:100%">
+      <div class="container" style="background-color:white">
+        <h2>RM3 OFF</h2>
+        <p>For Students</p>
+      </div>
+      <div class="container">
+        <p>With Valid ID · App Order Only</p>
+      </div>
+    </div>
+
+    <!-- Coupon 5 -->
+    <div class="coupon">
+      <div class="container">
+        <h3>Royal Bites</h3>
+      </div>
+      <img src="images/coupon/promo5.jpg" alt="Buy 1 Get 1 Nuggets" style="width:100%">
+      <div class="container" style="background-color:white">
+        <h2>Buy 1 Get 1</h2>
+        <p>Nugget Box</p>
+      </div>
+      <div class="container">
+        <p>Scan with App · Limited Time</p>
+      </div>
+    </div>
+
+    <!-- Coupon 6 -->
+    <div class="coupon">
+      <div class="container">
+        <h3>Royal Bites</h3>
+      </div>
+      <img src="images/coupon/promo6.jpg" alt="Free Drink Upgrade" style="width:100%">
+      <div class="container" style="background-color:white">
+        <h2>Free Upgrade</h2>
+        <p>To Large Drink</p>
+      </div>
+      <div class="container">
+        <p>On Combo Orders · App Required</p>
+      </div>
+    </div>
+
+    <!-- Coupon 7 -->
+    <div class="coupon">
+      <div class="container">
+        <h3>Royal Bites</h3>
+      </div>
+      <img src="images/coupon/promo7.jpg" alt="Birthday Special" style="width:100%">
+      <div class="container" style="background-color:white">
+        <h2>Birthday Gift</h2>
+        <p>Free Dessert</p>
+      </div>
+      <div class="container">
+        <p>Register in App · Redeem During Birthday Month</p>
+      </div>
+    </div>
+
+    <!-- Coupon 8 -->
+    <div class="coupon">
+      <div class="container">
+        <h3>Royal Bites</h3>
+      </div>
+      <img src="images/coupon/promo8.jpeg" alt="Mega Royale Beef" style="width:100%">
+      <div class="container" style="background-color:white">
+        <h2>Sunday Special</h2>
+        <p>RM 7 Mega Royal Beef</p>
+      </div>
+      <div class="container">
+        <p>App Exclusive · 5–8 PM Only</p>
+      </div>
+    </div>
+
+    <!-- Coupon 9 -->
+    <div class="coupon">
+      <div class="container">
+        <h3>Royal Bites</h3>
+      </div>
+      <img src="images/coupon/promo9.jpg" alt="Member Reward" style="width:100%">
+      <div class="container" style="background-color:white">
+        <h2>Reward Unlock</h2>
+        <p>Scan 5 Receipts</p>
+      </div>
+      <div class="container">
+        <p>Track Progress in App</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="app.html" class="app-btn">Download the App</a>
+</section>
+
+  <!-- === COUNTDOWN SECTION === -->
+  <section class="countdown">
+  <h2>Countdown to Our 60th Anniversary</h2>
+  <img src="images/60.jpg" alt="60th Anniversary Celebration" class="countdown-image">
+  <p>Join us in celebrating six decades of delicious moments, loyal customers, and unforgettable flavors. The celebration begins soon!</p>
+  <p>Royal Bites turns 60 this July — marking a legacy of quality food and community spirit. Stay tuned for special anniversary rewards.</p>
+  <p>60 years of flavor, family, and fast service. Big surprises await this July!</p>
+  <p>The countdown is on! Don’t miss exclusive deals, giveaways, and anniversary specials dropping on July 14.</p>
+
+  <div class="countdown-wrapper"> 
+  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+  <a href="https://logwork.com/countdown-timer"
+     class="countdown-timer"
+     data-width="1000"
+     data-timezone="Asia/Kuala_Lumpur"
+     data-textcolor="#ff6f61"
+     data-date="2025-07-14 00:00"
+     data-background="#002b5b"
+     data-digitscolor="#ffffff"
+     data-unitscolor="#ff6f61"
+     style="display:block; min-height:200px; width:100%;">
+    Countdown Timer
+  </a>
+</div>
+</section>
+
+</main>
+
+ <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" title="Go to top" onclick="scrollToTop()">&#11014;</button>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" class="footer-logo" />
+        <p class="footer-intro">
+          Royal Bites promises a value lifestyle proposition of great variety and quality food at affordable prices.
+          The uncompromising quality of food is what keeps our customers coming back.
+          <a href="about.html" class="read-more">Read more</a>
+        </p>
+      </div>
+
+  <!-- Quick Links -->
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="promo.html">Promotions</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="restaurant.html">Find a Restaurant</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+  </ul>
+</div>
+        <!-- Social & Follow Us -->
+<div class="footer-right">
+  <h4>Follow Us</h4>
+  <a href="https://www.instagram.com/myroyalbites/" target="_blank" class="social-icon">
+    <img src="images/instagram.png" alt="Instagram" class="social-logo" />
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+    <img src="images/linkedin.png" alt="LinkedIn" class="social-logo" />
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Royal Bites. All rights reserved.</p>
+    <p>Best viewed on Chrome or Edge · 1920 × 1080 recommended.</p>
+    <p class="disclaimer">
+      Disclaimer: This website is a student project created for educational purposes under the IML254 course.
+    </p>
+    <p>Last updated: June 2025</p>
+  </div>
+</footer>
+
+
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      const iframe = document.querySelector('.countdown-wrapper iframe');
+      if (iframe) {
+        iframe.style.height = '240px'; // or 260px if needed
+      }
+    }, 1000); // wait for widget to load
+  });
+function showPage(pageNum) {
+  const pages = document.querySelectorAll('.promo-page');
+  const buttons = document.querySelectorAll('.pagination button');
+
+  pages.forEach((page, index) => {
+    page.style.display = (index + 1 === pageNum) ? 'grid' : 'none';
+  });
+
+  buttons.forEach((btn, index) => {
+    btn.classList.toggle('active', index + 1 === pageNum);
+  });
+}
+
+</script>
+
+
+</body>
+</html>

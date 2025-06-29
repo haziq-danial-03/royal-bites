@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regular Menu | Royal Bites</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+  <a href="menu.html">Menu</a>
+  <ul class="dropdown-content">
+    <li><a href="breakfast.html">Breakfast</a></li>
+    <li><a href="regular.html" class="active">Regular</a></li>
+  </ul>
+</li>
+
+        <li><a href="promo.html">Promotions</a></li>
+        <li><a href="app.html">Mobile App</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button id="hamburger" class="hamburger">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <button id="close-sidebar" class="close-btn">&#x2715;</button>
+    <ul>
+      
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Hero -->
+ <section class="hero">
+  <h1>Regular Menu</h1>
+  <p>Enjoy our delicious lineup of all-day meals — satisfying burgers, sides, and drinks made fresh for you.</p>
+</section>
+
+
+  <!-- Menu Content -->
+<main class="menu-section">
+
+  <!-- Category: Burgers -->
+  <div class="menu-category">
+    <h2>Burgers</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="images/menu/classic_beef.jpg" alt="Classic Beef Burger" />
+        <div class="menu-info">
+          <h3>Classic Beef Burger</h3>
+          <p class="calories">620 kcal</p>
+          <p class="desc">Juicy grilled beef patty with lettuce, tomato, cheese, and signature sauce.</p>
+          <p class="price">Set: RM13.90 &nbsp; | &nbsp; À la carte: RM10.90</p>
+        </div>
+      </div>
+
+       <div class="menu-card">
+        <img src="images/menu/crispy_chicken.jpg" alt="Crispy Chicken Burger" />
+        <div class="menu-info">
+          <h3>Crispy Chicken Burger</h3>
+          <p class="calories">540 kcal</p>
+          <p class="desc">Golden fried chicken fillet with lettuce, mayo, and soft bun.</p>
+          <p class="price">Set: RM10.50 &nbsp; | &nbsp; À la carte: RM8.50</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/spicy.jpg" alt="Spicy Chicken Burger" />
+        <div class="menu-info">
+          <h3>Spicy Chicken Burger</h3>
+          <p class="calories">540 kcal</p>
+          <p class="desc">Crispy chicken with spicy sauce and fresh lettuce in a toasted bun.</p>
+          <p class="price">Set: RM12.50 &nbsp; | &nbsp; À la carte: RM9.50</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/double.jpeg" alt="Double Cheese Burger" />
+        <div class="menu-info">
+          <h3>Double Cheese Burger</h3>
+          <p class="calories">700 kcal</p>
+          <p class="desc">Two beef patties layered with cheddar cheese and pickles — extra satisfying.</p>
+          <p class="price">Set: RM15.90 &nbsp; | &nbsp; À la carte: RM12.90</p>
+        </div>
+      </div>
+     
+      <div class="menu-card">
+  <img src="images/menu/beef.jpeg" alt="Mega Royal Beef" />
+  <div class="menu-info">
+    <h3>Mega Royal Beef</h3>
+    <p class="calories">720 kcal</p>
+    <p class="desc">Our signature double beef patty burger with sharp cheddar, royal sauce, and crisp lettuce.</p>
+    <p class="price">RM13.90</p>
+  </div>
+</div>
+
+<div class="menu-card">
+  <img src="images/menu/chicken.jpg" alt="Mega Royal Chicken" />
+  <div class="menu-info">
+    <h3>Mega Royal Chicken</h3>
+    <p class="calories">690 kcal</p>
+    <p class="desc">Crispy chicken fillet with melted cheese, lettuce, and Royal Bites’ spicy mayo on a toasted bun.</p>
+    <p class="price">RM12.90</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Category: Sides -->
+  <div class="menu-category">
+    <h2>Fries & Sides</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="images/menu/fries.jpg" alt="French Fries" />
+        <div class="menu-info">
+          <h3>French Fries</h3>
+          <p class="calories">320 kcal</p>
+          <p class="desc">Crispy golden fries — perfectly seasoned and hot.</p>
+          <p class="price">RM4.90</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/nugget.jpg" alt="Chicken Nuggets" />
+        <div class="menu-info">
+          <h3>Chicken Nuggets (6pcs)</h3>
+          <p class="calories">380 kcal</p>
+          <p class="desc">Bite-sized, crispy and tender — served with dipping sauce.</p>
+          <p class="price">RM6.90</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/mashed.jpg" alt="Mashed Potatoes" />
+        <div class="menu-info">
+          <h3>Mashed Potatoes</h3>
+          <p class="calories">280 kcal</p>
+          <p class="desc">Smooth mashed potatoes with rich brown gravy.</p>
+          <p class="price">RM4.50</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Category: Drinks -->
+  <div class="menu-category">
+    <h2>Beverages</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="images/menu/coke.jpg" alt="Coca-Cola" />
+        <div class="menu-info">
+          <h3>Coca-Cola</h3>
+          <p class="calories">140 kcal</p>
+          <p class="desc">Chilled classic Coca-Cola to refresh your meal.</p>
+          <p class="price">RM3.50</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/lemon_ice.jpg" alt="Iced Lemon Tea" />
+        <div class="menu-info">
+          <h3>Iced Lemon Tea</h3>
+          <p class="calories">130 kcal</p>
+          <p class="desc">Cool and citrusy lemon tea with just the right sweetness.</p>
+          <p class="price">RM4.00</p>
+        </div>
+      </div>
+     
+      <div class="menu-card">
+        <img src="images/menu/iced_latte.jpeg" alt="Iced Latte" />
+        <div class="menu-info">
+          <h3>Iced Latte</h3>
+          <p class="calories">140 kcal</p>
+          <p class="desc">Chilled espresso with cold milk over ice — smooth and bold.</p>
+          <p class="price">RM6.50</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/mocha.jpg" alt="Iced Mocha" />
+        <div class="menu-info">
+          <h3>Iced Mocha</h3>
+          <p class="calories">220 kcal</p>
+          <p class="desc">A chocolatey twist on espresso — cool, creamy, and rich.</p>
+          <p class="price">RM7.00</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/iced_americano.jpg" alt="Iced Americano" />
+        <div class="menu-info">
+          <h3>Iced Americano</h3>
+          <p class="calories">20 kcal</p>
+          <p class="desc">Bold espresso and cold water over ice — clean and energizing.</p>
+          <p class="price">RM5.00</p>
+        </div>
+      </div>
+
+     <div class="menu-card">
+  <img src="images/menu/choco.jpg" alt="Iced Chocolate" />
+  <div class="menu-info">
+    <h3>Iced Chocolate</h3>
+    <p class="calories">310 kcal</p>
+    <p class="desc">Chilled chocolate drink topped with creamy foam for a sweet, smooth sip.</p>
+    <p class="price">RM6.50</p>
+  </div>
+</div>
+
+<div class="menu-card">
+  <img src="images/menu/matcha.jpg" alt="Iced Matcha" />
+  <div class="menu-info">
+    <h3>Iced Matcha</h3>
+    <p class="calories">280 kcal</p>
+    <p class="desc">Refreshing green tea latte served over ice with subtle earthy sweetness.</p>
+    <p class="price">RM6.90</p>
+  </div>
+</div>
+
+<div class="menu-card">
+  <img src="images/menu/ice_milo.jpg" alt="Iced Milo" />
+  <div class="menu-info">
+    <h3>Iced Milo</h3>
+    <p class="calories">340 kcal</p>
+    <p class="desc">Malaysia’s favourite chocolate malt drink, rich and ice-cold.</p>
+    <p class="price">RM5.90</p>
+  </div>
+</div>
+
+<div class="menu-card">
+  <img src="images/menu/mango.jpg" alt="Mango Ice Blended" />
+  <div class="menu-info">
+    <h3>Mango Ice Blended</h3>
+    <p class="calories">360 kcal</p>
+    <p class="desc">Frozen mango smoothie bursting with tropical flavour and icy refreshment.</p>
+    <p class="price">RM7.90</p>
+  </div>
+</div>
+
+<div class="menu-card">
+  <img src="images/menu/strawberry_blended.jpg" alt="Strawberry Ice Blended" />
+  <div class="menu-info">
+    <h3>Strawberry Ice Blended</h3>
+    <p class="calories">370 kcal</p>
+    <p class="desc">Cool and creamy strawberry blended drink with fruity delight in every sip.</p>
+    <p class="price">RM7.90</p>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+    <!-- Category: Desserts -->
+  <div class="menu-category">
+    <h2>Desserts & Ice Cream</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="images/menu/vanilla_cone.jpg" alt="Vanilla Cone" />
+        <div class="menu-info">
+          <h3>Vanilla Cone</h3>
+          <p class="calories">180 kcal</p>
+          <p class="desc">Soft-serve vanilla in a crispy cone — a timeless favorite.</p>
+          <p class="price">RM2.50</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/cone.jpg" alt="Chocolate Cone" />
+        <div class="menu-info">
+          <h3>Chocolate Cone</h3>
+          <p class="calories">360 kcal</p>
+          <p class="desc">Soft-serve vanilla dip in chocolate in a crispy cone — everyone's favourite.</p>
+          <p class="price">RM5.50</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/chocolate.jpg" alt="Chocolate Sundae" />
+        <div class="menu-info">
+          <h3>Royal Chocolate Sundae</h3>
+          <p class="calories">280 kcal</p>
+          <p class="desc">Creamy vanilla soft serve topped with rich chocolate sauce.</p>
+          <p class="price">RM4.00</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="images/menu/strawberry_sundae.jpg" alt="Strawberry Sundae" />
+        <div class="menu-info">
+          <h3>Royal Strawberry Sundae</h3>
+          <p class="calories">270 kcal</p>
+          <p class="desc">Classic vanilla with a swirl of tangy strawberry topping.</p>
+          <p class="price">RM4.00</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div class="order-cta">
+  <p style="font-size: 1.2rem; margin-bottom: 0.8rem; color: #012A4A; font-weight: bold;">
+  Hungry already? Your Royal feast is just one click away!
+</p>
+  <a href="order.html" class="menu-btn">Order Now</a>
+  <a href="kids.html" class="menu-btn"> Kids Menu</a>
+</div>
+
+
+</main>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" title="Go to top" onclick="scrollToTop()">&#11014;</button>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" class="footer-logo" />
+        <p class="footer-intro">
+          Royal Bites promises a value lifestyle proposition of great variety and quality food at affordable prices.
+          The uncompromising quality of food is what keeps our customers coming back.
+          <a href="about.html" class="read-more">Read more</a>
+        </p>
+      </div>
+
+  <!-- Quick Links -->
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="promo.html">Promotions</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="restaurant.html">Find a Restaurant</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+  </ul>
+</div>
+        <!-- Social & Follow Us -->
+<div class="footer-right">
+  <h4>Follow Us</h4>
+  <a href="https://www.instagram.com/myroyalbites/" target="_blank" class="social-icon">
+    <img src="images/instagram.png" alt="Instagram" class="social-logo" />
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+    <img src="images/linkedin.png" alt="LinkedIn" class="social-logo" />
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Royal Bites. All rights reserved.</p>
+    <p>Best viewed on Chrome or Edge · 1920 × 1080 recommended.</p>
+    <p class="disclaimer">
+      Disclaimer: This website is a student project created for educational purposes under the IML254 course.
+    </p>
+    <p>Last updated: June 2025</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

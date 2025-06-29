@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Royal Bites Team" />
+  <meta name="description" content="Locate Royal Bites restaurants across Malaysia. Open 24 hours at key locations nationwide." />
+ 
+  <title>Restaurants | Royal Bites</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/royalbites-logo.png" alt="Royal Bites Logo" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+  <a href="menu.html">Menu</a>
+  <ul class="dropdown-content">
+    <li><a href="breakfast.html">Breakfast</a></li>
+    <li><a href="regular.html">Regular</a></li>
+  </ul>
+</li>
+
+      <li><a href="promo.html" >Promotions</a></li>
+      <li><a href="app.html">Mobile App</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <button id="hamburger" class="hamburger" aria-label="Open More Links">&#9776;</button>
+  </nav>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside id="sidebar" class="sidebar" aria-label="More navigation">
+    <button id="close-sidebar" class="close-btn" aria-label="Close Sidebar">&times;</button>
+    <ul>
+      <li><a href="restaurant.html" class="active">Restaurants</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+  
+  <main>
+<section class="hero">
+    <h1>Find a Royal Bites Near You</h1>
+    <p>From Perlis to Sabah, Royal Bites proudly operates flagship outlets across Malaysia — open 24/7 for your convenience.</p>
+  </section>
+
+ <!-- Flagship Branches Section -->
+
+  <div class="filter-container">
+  <label for="state-filter">Filter by State:</label>
+  <select id="state-filter">
+    <option value="all">All States</option>
+    <option value="Perlis">Perlis</option>
+    <option value="Selangor">Selangor</option>
+    <option value="Melaka">Melaka</option>
+    <option value="Pulau Pinang">Pulau Pinang</option>
+    <option value="Kedah">Kedah</option>
+    <option value="Kelantan">Kelantan</option>
+    <option value="Terengganu">Terengganu</option>
+    <option value="Pahang">Pahang</option>
+    <option value="Johor">Johor</option>
+    <option value="Negeri Sembilan">Negeri Sembilan</option>
+    <option value="Perak">Perak</option>
+    <option value="Sarawak">Sarawak</option>
+    <option value="Sabah">Sabah</option>
+    <option value="Kuala Lumpur">Kuala Lumpur</option>
+  </select>
+</div>
+
+  <section class="restaurant-branches">
+    <h2>Flagship Outlets Nationwide</h2>
+    <div class="branches-grid">
+
+      <!-- Example Card: Royal Bites @ Arau -->
+     <div class="branch-card" data-state="Perlis">
+        <h3>Royal Bites @ Arau, Perlis</h3>
+        <p>Open 24 Hours · Dine-In · Drive-Thru · Delivery</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.3519687879595!2d100.25857967401693!3d6.441989593523692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c98506b1e2f8f%3A0x7c94d6a9fef2d91e!2sUiTM%20Cawangan%20Perlis!5e0!3m2!1sen!2smy!4v1719393127202!5m2!1sen!2smy" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+     <div class="branch-card" data-state="Selangor">
+  <h3>Royal Bites @ Shah Alam, Selangor</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63745.49128250399!2d101.503682!3d3.069765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc528b5e947345%3A0xe8520627500cb672!2sUniversiti%20Teknologi%20MARA%20(UiTM)%20Shah%20Alam!5e0!3m2!1sen!2smy!4v1750952102076!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+     <div class="branch-card" data-state="Selangor">
+  <h3>Royal Bites @ Puncak Alam, Selangor</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15934.371204484047!2d101.448!3d3.201145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc5a0f39e6880b%3A0xa074678b4db72ece!2sUiTM%20Cawangan%20Selangor%2C%20Kampus%20Puncak%20Alam!5e0!3m2!1sen!2smy!4v1750952141843!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Melaka">
+  <h3>Royal Bites @ Alor Gajah, Melaka</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d255129.09976282818!2d102.167687!3d2.374622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1fd035d912453%3A0xa838d57b01686e24!2sUiTM%20Alor%20Gajah!5e0!3m2!1sen!2smy!4v1750952161410!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Pulau Pinang">
+  <h3>Royal Bites @ Permatang Pauh, Pulau Pinang</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15888.896917610971!2d100.418761!3d5.38275!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac8959f48de99%3A0xfdaee01c72554c2b!2sUiTM%20Cawangan%20Pulau%20Pinang!5e0!3m2!1sen!2smy!4v1750952183433!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Kedah">
+  <h3>Royal Bites @ Sungai Petani, Kedah</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15879.980206455555!2d100.450482!3d5.713848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b28adfa3c0e53%3A0xe310799cc09dac88!2sUiTM%20Kedah!5e0!3m2!1sen!2smy!4v1750952201148!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Kelantan">
+  <h3>Royal Bites @ Machang, Kelantan</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15878.779080516477!2d102.273499!3d5.756998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1750952221152!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Terengganu">
+  <h3>Royal Bites @ Dungun, Terengganu</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15905.527388239527!2d103.440954!3d4.703549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c80eced2d577e7%3A0x97d743b02a472eb4!2sUiTM%20Kampus%20Dungun!5e0!3m2!1sen!2smy!4v1750952254650!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Pahang">
+  <h3>Royal Bites @ Jengka, Pahang</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15924.989954957699!2d102.561084!3d3.756214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c93113a831eee3%3A0x780eda2f2091b8f6!2sUniversiti%20Teknologi%20MARA%20Jengka%20Campus%20Pahang%20Branch!5e0!3m2!1sen!2smy!4v1750952276208!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Johor">
+  <h3>Royal Bites @ Segamat, Johor</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.057367048119!2d102.72672767496866!3d2.4879643974907046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ce2c6ce929a871%3A0xc0dfa5fe6922a589!2sUiTM%20Cawangan%20Johor%2C%20Kampus%20Segamat!5e0!3m2!1sen!2smy!4v1750951970170!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Negeri Sembilan"> 
+ <h3>Royal Bites @ Kuala Pilah, Negeri Sembilan</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2040359.2008058482!2d102.221178!3d2.793661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ce71881aaaaaab%3A0xcafe25c436ce34d3!2sUniversiti%20Teknologi%20MARA%20Negeri%20Sembilan%20Kampus%20Kuala%20Pilah!5e0!3m2!1sen!2smy!4v1750952295873!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+<div class="branch-card" data-state="Perak">
+  <h3>Royal Bites @ Seri Iskandar, Perak</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15913.124389032064!2d100.957667!3d4.358293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caedbdbf3f2185%3A0x79033b3da9b69b4b!2sUniversiti%20Teknologi%20MARA%20Perak%20Branch!5e0!3m2!1sen!2smy!4v1750952316882!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Sarawak">
+  <h3>Royal Bites @ Samarahan, Sarawak</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.172948893494!2d110.448934!3d1.448578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba23968cc4213%3A0xb7d2ff150f4112d7!2sUniversiti%20Teknologi%20MARA%20Cawangan%20Sarawak%20Kampus%20Samarahan!5e0!3m2!1sen!2smy!4v1750952335797!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Sabah">
+  <h3>Royal Bites @ Kota Kinabalu, Sabah</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15869.987038967018!2d116.14589500000001!3d6.063537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b6caae7136ed9%3A0xe63a0f7aaddb56a8!2sUniversiti%20Teknologi%20MARA%20Sabah%20Branch!5e0!3m2!1sen!2smy!4v1750952355429!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="branch-card" data-state="Kuala Lumpur">
+  <h3>Royal Bites @ KLCC, Kuala Lumpur</h3>
+  <p>Open 24 Hours · Dine‑In · Drive‑Thru · Delivery</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15935.03904554601!2d101.711878!3d3.1579170000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0x9e3afdd17c8a9056!2sPetronas%20Twin%20Towers!5e0!3m2!1sen!2smy!4v1750952374598!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+      
+    </div>
+  </section>
+
+
+  <!-- Nationwide Facts Section -->
+<section class="nationwide-stats">
+  <h2>Royal Bites Nationwide</h2>
+
+  <div class="stats-grid">
+    <!-- Original Cards -->
+    <div class="stat-card"><h3>200+</h3><p>Outlets Nationwide</p></div>
+    <div class="stat-card"><h3>14</h3><p>States Covered</p></div>
+    <div class="stat-card"><h3>2,500+</h3><p>Daily App Orders</p></div>
+    <div class="stat-card"><h3>24/7</h3><p>Open All Day, Every Day</p></div>
+    <div class="stat-card"><h3>50km</h3><p>Delivery Radius</p></div>
+
+    <!-- New Image-Based Cards -->
+    <div class="stat-card img-card">
+      <img src="images/fine_dining.jpg" alt="Fine Dining Outlet">
+      <p>15 Fine Dining Outlets — one in each state for premium dine-in experience</p>
+    </div>
+
+    <div class="stat-card img-card">
+      <img src="images/drive-thru.jpg" alt="Drive-Thru Option">
+      <p>Drive‑Thru Ready — For those always on the move</p>
+    </div>
+
+    <div class="stat-card img-card">
+      <img src="images/mobile-app.jpg" alt="Mobile App Orders">
+      <p>Order on the Go with Our Royal Bites Mobile App</p>
+    </div>
+
+    <div class="stat-card img-card">
+      <img src="images/custom-orders.jpg" alt="Custom Orders">
+      <p>Customizable Meals — Your Way, Every Day</p>
+    </div>
+
+    <div class="stat-card img-card">
+      <img src="images/sustainability.jpg" alt="Eco Packaging">
+      <p>Eco‑Friendly Packaging for a Greener Future</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Call to Action -->
+  <section class="cta-app-locator">
+    <h2>Find Your Nearest Royal Bites Anytime</h2>
+    <p>Use the Royal Bites app to locate, order, and enjoy exclusive offers at your convenience.</p>
+    <a href="app.html" class="btn">Find via App</a>
+  </section>
+
+
+<!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" title="Go to top" onclick="scrollToTop()">&#11014;</button>
+
+ <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" class="footer-logo" />
+        <p class="footer-intro">
+          Royal Bites promises a value lifestyle proposition of great variety and quality food at affordable prices.
+          The uncompromising quality of food is what keeps our customers coming back.
+          <a href="about.html" class="read-more">Read more</a>
+        </p>
+      </div>
+
+  <!-- Quick Links -->
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="promo.html">Promotions</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="restaurant.html">Find a Restaurant</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+  </ul>
+</div>
+        <!-- Social & Follow Us -->
+<div class="footer-right">
+  <h4>Follow Us</h4>
+  <a href="https://www.instagram.com/myroyalbites/" target="_blank" class="social-icon">
+    <img src="images/instagram.png" alt="Instagram" class="social-logo" />
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+    <img src="images/linkedin.png" alt="LinkedIn" class="social-logo" />
+  </a>
+</div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Royal Bites. All rights reserved.</p>
+    <p>Best viewed on Chrome or Edge · 1920 × 1080 recommended.</p>
+    <p class="disclaimer">
+      Disclaimer: This website is a student project created for educational purposes under the IML254 course.
+    </p>
+    <p>Last updated: June 2025</p>
+  </div>
+</footer>
+
+
+
+<script>
+  document.getElementById("state-filter").addEventListener("change", function () {
+    const selected = this.value;
+    const cards = document.querySelectorAll(".branch-card");
+
+    cards.forEach((card) => {
+      const state = card.getAttribute("data-state");
+      if (selected === "all" || state === selected) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

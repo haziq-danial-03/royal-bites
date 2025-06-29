@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Group Members" />
+  <meta name="description" content="Royal Bites – Premium fast food experience with local flavor." />
+  <meta name="keywords" content="Royal Bites, Fast Food, Burgers, Malaysia, Delivery, Menu" />
+  <title>Home | Royal Bites</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="announcement-banner" id="announcement">
+  <div class="announcement-inner">
+    <p><strong>Order Now</strong> & enjoy fresh Royal Bites delivered fast to your doorstep!</p>
+    <a href="order.html" class="announcement-btn">Place Order</a>
+    <button id="close-announcement" aria-label="Close announcement">&times;</button>
+  </div>
+</div>
+
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+  <a href="menu.html">Menu</a>
+  <ul class="dropdown-content">
+    <li><a href="breakfast.html">Breakfast</a></li>
+    <li><a href="regular.html">Regular</a></li>
+  </ul>
+</li>
+
+      <li><a href="promo.html">Promotions</a></li>
+      <li><a href="app.html">Mobile App</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <button id="hamburger" class="hamburger" aria-label="Open More Links">&#9776;</button>
+  </nav>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside id="sidebar" class="sidebar" aria-label="More navigation">
+    <button id="close-sidebar" class="close-btn" aria-label="Close Sidebar">&times;</button>
+    <ul>
+      
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="hero-upgraded">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1 class="hero-title">Bite Into Bold Flavour</h1>
+      <p class="hero-subtext">Crafted with passion, served with pride — discover why Royal Bites is Malaysia’s favourite.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn-hero">Order Now</a>
+        <a href="promo.html" class="btn-hero-outline">See Promotions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="feature">
+      <h2>Who We Are</h2>
+      <p>
+        At Royal Bites, we are passionate about delivering quality meals to every customer. Our menu
+        is crafted with care, combining local tastes with classic fast-food favorites.
+      </p>
+      <p>
+        Whether you're dining in, taking away, or ordering online — Royal Bites offers consistent,
+        satisfying meals that fit your busy lifestyle.
+      </p>
+    </section>
+
+    <section class="highlight">
+      <h2>What Sets Us Apart</h2>
+      <ul>
+        <li>Premium ingredients and strict quality control</li>
+        <li>Locally inspired menu options</li>
+        <li>Fast, friendly, and efficient service</li>
+        <li>Reliable delivery and app-based ordering</li>
+        <li>Family-friendly dining environment</li>
+      </ul>
+    </section>
+
+    <section class="promotions">
+      <h2>Featured Offers</h2>
+      <div class="promo-cards">
+        <div class="promo-card">
+          <img src="images/promo1.jpg" alt="Promo 1" />
+          <h3>Chicken Burger Deals</h3>
+          <p>50% off on Monday from 12 pm to 1 pm</p>
+        </div>
+        <div class="promo-card">
+          <img src="images/promo2.jpg" alt="Promo 2" />
+          <h3>Strawberry Feast</h3>
+          <p>Enjoy cold strawberry sundae on Friday for 30% off</p>
+        </div>
+        <div class="promo-card">
+          <img src="images/promo3.jpg" alt="Promo 3" />
+          <h3>Coffein Time Baby</h3>
+          <p>Start your day right. Add on RM1 with any meals set</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="outreach">
+      <h2>Community Commitment</h2>
+      <p>
+        Royal Bites believes in giving back. We support local initiatives, food sustainability,
+        and student-driven programs as part of our long-term social responsibility.
+      </p>
+      <p>
+        More than just a restaurant — we are part of your community.
+      </p>
+    </section>
+  </main>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" title="Go to top" onclick="scrollToTop()">&#11014;</button>
+
+ <!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Logo & Intro -->
+    <div class="footer-left">
+      <img src="images/royal-bites-logo.png" alt="Royal Bites Logo" class="footer-logo" />
+      <p class="footer-intro">
+        Royal Bites promises a value lifestyle proposition of great variety and quality food at affordable prices.
+        The uncompromising quality of food and service is what sets us apart.
+      </p>
+      <p><a href="about.html" class="read-more">Read More</a></p>
+    </div>
+
+    <!-- Quick Links -->
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="promo.html">Promotions</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="restaurant.html">Find a Restaurant</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+  </ul>
+</div>
+
+
+    <!-- Social & Follow Us -->
+    <div class="footer-right">
+      <h4>Follow Us</h4>
+      <a href="https://www.instagram.com/myroyalbites/" target="_blank" class="social-icon">
+        <img src="images/instagram.png" alt="Instagram" class="social-logo" />
+      </a>
+      <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon">
+        <img src="images/linkedin.png" alt="LinkedIn" class="social-logo" />
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Bottom Legal Line -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Royal Bites. All rights reserved.</p>
+    <p>Best viewed on Chrome or Edge · 1920 × 1080 recommended.</p>
+    <p class="disclaimer">
+      Disclaimer: This website is a student project created for educational purposes under the IML254 course.
+    </p>
+    <p>Last updated: June 2025</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
